@@ -13,8 +13,8 @@ services:
     healthcheck:
       test: [ "CMD", "pg_isready", "-U", "postgres", "-d", "postgres" ]
       interval: 3s
-      timeout: 3s
-      retries: 5
+      timeout: 5s
+      retries: 15
     ports:
       - "5432:5432"
     networks:
