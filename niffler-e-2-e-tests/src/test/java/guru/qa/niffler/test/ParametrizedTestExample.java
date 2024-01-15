@@ -3,6 +3,7 @@ package guru.qa.niffler.test;
 import guru.qa.niffler.jupiter.AllureIdParam;
 import guru.qa.niffler.jupiter.SpendJsonConverter;
 import guru.qa.niffler.model.SpendJson;
+import io.qameta.allure.Allure;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -18,7 +19,6 @@ public class ParametrizedTestExample {
   })
   @ParameterizedTest
   void paramTest(@AllureIdParam String allureId, String name) {
-
   }
 
 
